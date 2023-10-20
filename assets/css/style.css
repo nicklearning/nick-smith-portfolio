@@ -5,12 +5,13 @@
 /* Style the body */
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(../images/white-concrete-wall_53876-92803.jpg);
 }
 
 header {
-    color: white;
-    background-color: navy;
+    color: rgb(30, 20, 43);
     text-align: center;
+    background-color: hsla(223, 83%, 66%, 0.23);
     padding: 3%;
 }
 
@@ -20,12 +21,12 @@ header p {
 
 nav {
     display: flex;
-    background-color: rgb(99, 99, 125);
+    background-color: hsla(223, 91%, 54%, 0.345);
     justify-content: flex-end;
 }
 
 nav a {
-    color: white;
+    color: black;
     padding: 15px 15px;
     text-decoration: none;
     text-align: center;
@@ -33,8 +34,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgb(249, 249, 251);
-    color: black;
+    background-color: black;
+    color: white;
 }
 
 .content {
@@ -75,12 +76,39 @@ ul {
     justify-content: space-between;
 }
 
-.project{
+.project {
     width: 49%;
 }
 
 #first-project-img {
     width: 100%;
+}
+
+#first-project-img:hover, .project:hover {
+    border: 5px solid navy;
+}
+
+#contact{
+text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding-bottom: 3%;
+}
+
+footer a {
+    font-size: 1.25rem;
+    text-decoration: underline;
+    color: black;
+}
+
+footer a:hover {
+    background-color: black;
+    color: white;
+
 }
 
 
@@ -103,9 +131,12 @@ ul {
 }
 
 @media (max-width: 769px) {
-    .project-gallery{
+    .project-gallery, footer {
         flex-direction: column;
+        align-items: center;
+        line-height: 3rem;
     }
+
 
     .project {
         width: 100%;
