@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    color: white;
+    background-color: navy;
+    text-align: center;
+    padding: 3%;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(99, 99, 125);
+    justify-content: flex-end;
+}
+
+nav a {
+    color: white;
+    padding: 15px 15px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    background-color: rgb(249, 249, 251);
+    color: black;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-side {
+    width: 30%;
+    padding: 0px 30px;
+    border-right: 2px solid black;
+    margin: 10px 0px;
+}
+
+.left-side h2 {
+    margin-top: 10px;
+}
+
+ul {
+    list-style: square;
+    font-family: monospace;
+    font-size: 1.3rem;
+}
+
+.right-side {
+    width: 70%;
+    padding: 0px 30px;
+    margin: 10px 0px;
+}
+
+.right-side h2 {
+    margin-top: 10px;
+}
+
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project{
+    width: 49%;
+}
+
+#first-project-img {
+    width: 100%;
+}
+
+
+
+@media (max-width: 992px) {
+
+    nav,
+    .content {
+        flex-direction: column;
+    }
+
+    .left-side {
+        width: 100%;
+        border: none;
+    }
+
+    .right-side {
+        width: 100%;
+    }
+}
+
+@media (max-width: 769px) {
+    .project-gallery{
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+    }
+}
